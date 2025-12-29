@@ -28,6 +28,13 @@ body{
 
 }
 
+.Flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #a9a9a9;
+
+}
+
 /* Topo do Site */
 
 #topo{
@@ -38,6 +45,13 @@ body{
 }
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+
+
+/* cabeçalho */
+header {
+    height: 60;
+
+}
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
 body{
