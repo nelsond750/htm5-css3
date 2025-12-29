@@ -1,6 +1,32 @@
 /*
 Folha de estilo site one page HtML5 e Css3
+NelsonSalvador
 */
+
+/*  Css Reset */
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+
+}
+/* Importação (Google Fontes) */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+     font-family: "Open Sans", sans-serif;
+     font-size: 1em; 
+      
+
+}
+
+/* Layout */
+
+
+.Container{
+    margin:0 auto;
+    background-color: #ff0; 
+
+}
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -9,11 +35,21 @@ body{
     background-color: #0ff;
 }
 
+/* Layout */
+
+.Container{
+    max-width:540px;
+}
+
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
 body{
     background-color: #ff0;
+}
+
+.Container{
+    max-width:720px;
 }
 }
 /* Smartphone Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -21,10 +57,18 @@ body{
 body{
     background-color: #f60;
 }
+/* Layout */
+.Container{
+    max-width:960px;
+}
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
 body{
     background-color: #f00;
+}
+/* layout */
+.Container{
+    max-width:1140px;
 }
 }
