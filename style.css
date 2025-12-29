@@ -1,6 +1,29 @@
 /*
 Folha de estilo site one page HtML5 e Css3
 */
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px){
 body{
-    background-color:#ff0000;
+    background-color: #0ff;
+}
+
+}
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px){
+body{
+    background-color: #ff0;
+}
+
+/* Smartphone Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 992px){
+body{
+    background-color: #f60;
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1200px){
+body{
+    background-color: #f00;
 }
