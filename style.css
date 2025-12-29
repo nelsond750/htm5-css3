@@ -24,7 +24,16 @@ body{
 
 .Container{
     margin:0 auto;
-    background-color: #ff0; 
+    background-color: #dcdcdc; 
+
+}
+
+/* Topo do Site */
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 
 }
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
