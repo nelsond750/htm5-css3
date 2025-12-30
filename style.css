@@ -10,13 +10,13 @@ NelsonSalvador
     padding: 0;
 
 }
+
 /* Importação (Google Fontes) */
+
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
      font-family: "Open Sans", sans-serif;
      font-size: 1em; 
-      
-
 }
 
 /* Layout */
@@ -52,11 +52,50 @@ header {
     height: 60;
 
 }
+
+#logo img{
+    width: 128px;
+    height:128px;
+}
+
+#check{
+        display: none;
+}
+
+label{
+    font-size: 3em;
+    padding-right:15px;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{
+    right:0;
+
+}
+nav ul li{
+
+        padding:20px;
+        border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:aliceblue
+}   
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
-body{
-    background-color: #0ff;
-}
+
 
 /* Layout */
 
@@ -67,9 +106,7 @@ body{
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
-body{
-    background-color: #ff0;
-}
+
 
 .Container{
     max-width:720px;
@@ -77,9 +114,7 @@ body{
 }
 /* Smartphone Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
-body{
-    background-color: #f60;
-}
+
 /* Layout */
 .Container{
     max-width:960px;
@@ -87,11 +122,32 @@ body{
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
-body{
-    background-color: #f00;
-}
+
 /* layout */
 .Container{
     max-width:1140px;
 }
+
+/* Cabeçalho */
+
+header{
+    height: 170px;
+    
 }
+
+#logo img{
+    width: 140;
+    height: 110px;
+    margin-top: 100px;
+}
+
+label{
+    display: none;
+
+}
+nav ul{
+    position: static;
+    
+}
+}
+
