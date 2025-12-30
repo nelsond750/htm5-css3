@@ -24,14 +24,14 @@ body{
 
 .Container{
     margin:0 auto;
-    background-color: #dcdcdc; 
+    
 
 }
 
 .Flex{
     display: flex;
     justify-content: space-between;
-    background-color: #a9a9a9;
+   
 
 }
 
@@ -147,7 +147,24 @@ label{
 }
 nav ul{
     position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top:50px
+
+}
+nav ul li{
+
+    float:left;
+    border: 0;
     
+
+}
+nav ul li a{
+    color:#343538;
+
+}
+nav ul li a:hover{
+    color:#c00000;
 }
 }
 
