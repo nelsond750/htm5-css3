@@ -34,10 +34,22 @@ body{
    
 
 }
+
+.Flex2{
+    display: flex;
+    align-items: center;
+
+}
+.Flex3{
+    display:flex;
+    flex-direction: column;
+
+}
 .Botao{
         text-decoration: none;
         color: #fff;
-        font-size: 700;
+        font-size: 1.3em;
+        font-weight: 700;
         background-color:#c00000;
         padding: 10px 40px;
         border: 2px solid #ffff;
@@ -62,8 +74,8 @@ header {
 }
 
 #logo img{
-    width: 128px;
-    height:128px;
+    width: 198px;
+    height:100px;
 }
 
 #check{
@@ -72,7 +84,10 @@ header {
 
 label{
     font-size: 3em;
-    padding-right:15px;
+    position: fixed;
+    top:5px;
+    right: 15px;
+    color: rgb(0,0,0,0.5);
 }
 
 nav ul{
@@ -106,8 +121,12 @@ nav ul li a{
 main{
     height: 75vh;
     background: url(img/banner.jpg);
+    background-position: center;
     background-size: cover;
     color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 main h1{
@@ -121,6 +140,60 @@ main h2{
     margin: 20px 0px 50px 0px;
 
 }
+ /* sobre */
+
+#sobre{
+
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueSobr{
+
+    display:none;
+
+}
+
+#textoSobre{
+    color: #fff;
+    padding: 0px 10px;
+}
+#textoSobre h2{
+    margin-bottom: 10px;
+
+
+}
+.TopicosSobre{
+
+        margin-top: 20px;
+}
+
+.TopicosSobre img{
+    margin-right: 10px;
+
+}
+
+/*One page */
+#onepage{
+    padding:50px 10px;
+
+}
+#onepage h2 {
+    margin-bottom: 10px;
+
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+#video iframe{
+        width:340px;
+        height:191px;
+        border:0;
+}
+
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
@@ -131,6 +204,18 @@ main h2{
 .Container{
     max-width:540px;
 }
+/* Destaque */
+main h1, main h2{
+    text-shadow: #0000 0.05em 0.05em 0.05em;
+
+}
+/*one page */
+
+#video iframe{
+        width:560px;
+        height:315px;
+}
+
 
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -140,13 +225,32 @@ main h2{
 .Container{
     max-width:720px;
 }
+/* Destaque */
+main {
+    height: 45vh;
+
 }
-/* Smartphone Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+main h1{
+    font-size: 5.5em;
+
+}
+main h2{
+    font-size: 2em;
+
+}
+
+}
+/* Tablet Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
 
 /* Layout */
 .Container{
     max-width:960px;
+}
+/* Destque */
+main{
+    height: 70vh;
 }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -195,5 +299,23 @@ nav ul li a{
 nav ul li a:hover{
     color:#c00000;
 }
+#sobre{
+    background-attachment: fixed;
+
+}
+#destaqueSobre{
+    display: inline;
+
+}
+#destaqueSobre img{
+    border-radius: 50%;
+    margin-right: 50px;
+}
+/* one page */
+.Flex3{
+    flex-direction: row;
+    align-items: center;
+
+} 
 }
 
