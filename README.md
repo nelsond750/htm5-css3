@@ -1,5 +1,5 @@
 # HTM5 & CSS3
-Aprendendo  HtML. CSS3 e SEO de forma simples, prática e objectiva desenvolvendo passo a passo do zero até a hospedagem um site moderno e responsivo.
+Aprendendo  HtML. CSS3 e SEO de forma simples, prática e objectiva desenvolvendo passo a passo do zero até a hospedagem um site moderno e responsivo. Com professor José de Assis
 ## Link Indicados
 ### Planeamento
 [setic](https://setic.minfin.gov.ao
