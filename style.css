@@ -10,11 +10,14 @@ NelsonSalvador
     padding: 0;
 
 }
+html{
 
+    scroll-behavior: smooth;
+}
 /* Importação (Google Fontes) */
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-body{
+body {
      font-family: "Open Sans", sans-serif;
      font-size: 1em; 
 }
@@ -22,25 +25,25 @@ body{
 /* Layout */
 
 
-.Container{
+.Container {
     margin:0 auto;
     
 
 }
 
-.Flex{
+.Flex { 
     display: flex;
     justify-content: space-between;
    
 
 }
 
-.Flex2{
+.Flex2 {
     display: flex;
     align-items: center;
 
 }
-.Flex3{
+.Flex3 {
     display:flex;
     flex-direction: column;
 
@@ -50,9 +53,17 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.Flex5 { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-
-.Botao{
+.Botao {
         text-decoration: none;
         color: #fff;
         font-size: 1.3em;
@@ -64,7 +75,7 @@ body{
 }
 /* Topo do Site */
 
-#topo{
+#topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -73,7 +84,7 @@ body{
 
 /* Cartões */
 
-.Card{
+.Card {
     margin-top: 25px;
     width: 338px;
     height: 520px; 
@@ -83,16 +94,16 @@ body{
     text-align: center;
 }
 
-.Card img{
+.Card img {
     border-radius: 25px 25px 0px 0px;
 
 }
 
-.Card h3{
+.Card h3 {
     margin-top: 15px;
 
 }
-.Card p{
+.Card p {
     text-align: left;
     color:#434343;
     padding: 10px 30px 50px 30px;
@@ -113,16 +124,16 @@ header {
 
 }
 
-#logo img{
+#logo img {
     width: 198px;
     height:100px;
 }
 
-#check{
+#check {
         display: none;
 }
 
-label{
+label {
     font-size: 3em;
     position: fixed;
     top:5px;
@@ -130,18 +141,18 @@ label{
     color: rgb(0,0,0,0.5);
 }
 
-nav ul{
+nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: rgba(52, 53,56, 0.95);
     height: 100vh;
     position: fixed;
     top: 60px;
-    right: -100%;
-    width: 100%;
+    right: -65%;
+    width: 65%;
     transition: all 0.5s;
 }
 
-#check:checked ~ ul{
+#check:checked ~ ul {
     right:0;
 
 }
@@ -149,16 +160,17 @@ nav ul li{
 
         padding:20px;
         border-bottom: 1px solid #a9a9a9;
+        text-align: right;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color:aliceblue
 }   
 
 /* Destaque */
 
-main{
+main {
     height: 75vh;
     background: url(img/banner.jpg);
     background-position: center;
@@ -169,7 +181,7 @@ main{
     text-align: center;
 }
 
-main h1{
+main h1 {
     font-size: 2.5em;
 
 
@@ -282,6 +294,50 @@ pad: 50px 0px;
     font-size: 1.2em;
 
 }
+/* rodapé */
+
+address{
+    padding: 35px 10px 50px 10px;
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    color:#fff
+}
+
+address{
+    text-decoration: none;
+    color:#fff
+}
+
+address img{
+    padding-top: 15px;
+}
+
+#iconeLocal{
+
+    display:none;
+
+}
+#dados{
+    margin:30px 0px 15px 0px;
+
+}
+
+#googleMaps{
+    display: none
+
+}
+
+footer{
+    padding: 50px;
+    background-color: #343638;
+    color: #fff;
+    text-align: center;
+}
+#soscial{
+    margin-bottom: 25px;
+
+}
 
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -306,6 +362,16 @@ main h1, main h2{
 }
 
 
+/* rodapé */
+.Flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#socila{
+    margin: 0px;
+}
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
@@ -369,6 +435,7 @@ label{
 }
 nav ul{
     position: static;
+    width: 100%;
     height: auto;
     background-color: transparent;
     margin-top:50px
@@ -424,6 +491,22 @@ nav ul li a:hover{
     height: 225px;
 
 
+}
+/* rodapé*/
+#iconeLocal{
+    display:inline;
+
+}
+#iconeMapa{
+    display: none;
+
+}
+
+#googleMaps{
+    display: inline;
+}
+.Flex6{
+    flex-direction: row-reverse;
 }
 }
 
